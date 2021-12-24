@@ -6,6 +6,8 @@ function App() {
     <div className="App">
       <h1>Space Travel / Mars</h1>
       <h2>Inspired by the Expanse</h2>
+      <p> Have features of mars, side trips to ceres?, belt? </p>
+      <p> What to expect in low gravity </p>
     </div>
   );
 }
