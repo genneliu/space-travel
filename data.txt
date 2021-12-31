@@ -1,0 +1,11 @@
+Ceres: diameter: 940 km
+gravity 0.3 g artificial
+length of day: 9hr without spinup, 24 hour artificial
+length of year: 467 days
+temperature: -105C average; -38C max
+population: 6 million permanent residents; 1 million transiting 
+fun facts:
+1) 800 to 1000 ships are docked on Ceres every day
+2) Ceres has an extensive tube train network underground
+
+

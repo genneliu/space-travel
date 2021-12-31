@@ -23,7 +23,8 @@ const products = [
   {
     name: "12 days in Ceres",
     imageUrl: "",
-    description: "10 day tour of Ceres, the gambling capital",
+    description:
+      "10 day tour of Ceres, is a haven for gambling. Ceres is the largest known asteroid and only dwarf planet in the inner Solar System. Ceres Station has man-made gravity for long-term living.",
     price: 10999,
     countinStock: 25,
   },
