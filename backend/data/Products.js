@@ -9,7 +9,8 @@ const products = [
   {
     name: "7 Days of Luna",
     imageUrl: "",
-    description: "A 7 day tour of Luna",
+    description:
+      "A 7 day tour of Luna, Earth's first interplanetary colony. This moon becomes a meeting ground between those on Earth and those in Space as the gravity can suit anyone.",
     price: 7999,
     countinStock: 15,
   },

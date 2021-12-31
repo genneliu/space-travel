@@ -17,3 +17,15 @@ fun facts:
 1)only moon with magnetosphere (ability to deflect charged ionizing radiation, so good for dome-grown crops in jupiter's radiation belt)
 2) first permanent human settlements in outer planets
 3) safest station in the jovian station
+
+Luna: diameter 3474.2km
+gravity: 0.1654 g
+length of day: 29.5 Earth days,
+length of year: 27.32 days,
+temperature: 100k(min), 220k(mean), 390k(max)
+population: 100,000,000
+fun facts:
+1) Luna is governed by the UN, first interplanetary colony 
+2) hub for commerce, research, and travel 
+3) most of Luna's infrastructure is underground to protect residents from micrometeoiroid impacts and effects of cosmic/solar radiation
+4) Spaceport city: Lovell, home to New Hague UN
