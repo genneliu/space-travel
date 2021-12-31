@@ -29,3 +29,15 @@ fun facts:
 2) hub for commerce, research, and travel 
 3) most of Luna's infrastructure is underground to protect residents from micrometeoiroid impacts and effects of cosmic/solar radiation
 4) Spaceport city: Lovell, home to New Hague UN
+
+Mars: diameter: 6779 km
+gravity: 0.376g
+length of year: 1.9 years
+temperature: -143C(min), -63C(avg), 35C(max)
+population: 4 billion
+fun facts:
+1) Mars was humanity's second home after Luna
+2)Mars is largely self sustaining
+3) Mars is the leader in environmental science and research
+4) terraforming project the greatest engineering project in human history
+5) cities: Olympia, Londres Nova, Syria Plantum, Mariner Valley
