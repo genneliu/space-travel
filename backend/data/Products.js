@@ -31,7 +31,8 @@ const products = [
   {
     name: "20 days of Ganymede",
     imageUrl: "",
-    description: "Ganymede, the agriculture capital",
+    description:
+      "Spend 20 days traveling in Ganymede, the agriculture capital of space. Ganymede is of utmost importance to space travel, providing agriculture to those living in space.",
     price: 18999,
     countinStock: 15,
   },

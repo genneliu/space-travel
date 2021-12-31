@@ -9,3 +9,11 @@ fun facts:
 2) Ceres has an extensive tube train network underground
 
 
+Ganymede: diameter: 5268.2 km 
+gravity: 0.146g
+length of year: 7.15 days
+temperature: 70k (min), 110k (average), 152k(max)
+fun facts: 
+1)only moon with magnetosphere (ability to deflect charged ionizing radiation, so good for dome-grown crops in jupiter's radiation belt)
+2) first permanent human settlements in outer planets
+3) safest station in the jovian station
