@@ -1,5 +1,6 @@
 //react17 does not need react import anymore
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -14,7 +15,7 @@ const NavBar = () => {
       <ul className="navbar__links">
         <li>
           {" "}
-          <Link> </Link>
+          <Link to="/cart"></Link>
         </li>
       </ul>
       {/*  Hamburger Menu */}
