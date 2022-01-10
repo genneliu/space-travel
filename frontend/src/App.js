@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //screens
 import HomeScreen from "./screens/HomeScreen";
@@ -14,12 +14,12 @@ function App() {
       {/*  Backdrop */}
       <main>
         {" "}
-        <Switch>
+        <Routes>
           {" "}
-          <Route exact path="/" component={HomeScreen} />
-          <Route exact path="/product/:id" component={ProductScreen} />
-          <Route exact path="/product/cart" component={CartScreen} />
-        </Switch>
+          <Route exact path="/" element={<HomeScreen />} />
+          <Route exact path="/product/:id" element={<ProductScreen />} />
+          <Route exact path="/product/cart" element={<CartScreen />} />
+        </Routes>
       </main>
     </Router>
   );
