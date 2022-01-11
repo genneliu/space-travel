@@ -6,10 +6,13 @@ import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 
+//components
+import NavBar from "./components/Navbar";
+
 function App() {
   return (
     <Router>
-      {/*  Nav Bar */}
+      <NavBar />
       {/*  Sidedrawer*/}
       {/*  Backdrop */}
       <main>
