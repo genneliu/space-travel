@@ -80,8 +80,8 @@
   background: #f4f4f4;
 }
 
-.hamburger__menu:hover {
-  background: #dd219e;
+.hamburger__menu:hover > div {
+  background-color: #dd219e;
 }
 
 @media (max-width: 960px) {

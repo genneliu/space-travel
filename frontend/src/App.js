@@ -16,9 +16,9 @@ function App() {
   const [sideToggle, setSideToggle] = useState(false);
   return (
     <Router>
-      <Navbar />
+      <Navbar click={() => setSideToggle(true)} />
       <SideDrawer show={sideToggle} />
-      <Backdrop show={sideToggle} />
+      <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
       <main>
         {" "}
         <Routes>
