@@ -2,11 +2,11 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar__logo">
-        <hr> Space Travel </hr>
+        <h2> Space Travel </h2>
       </div>
       {/*  Links */}
       <ul className="navbar__links">
@@ -32,4 +32,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;

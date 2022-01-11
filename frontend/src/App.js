@@ -7,12 +7,12 @@ import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 
 //components
-import NavBar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
-      <NavBar />
+      <Navbar />
       {/*  Sidedrawer*/}
       {/*  Backdrop */}
       <main>
@@ -20,8 +20,8 @@ function App() {
         <Routes>
           {" "}
           <Route exact path="/" element={<HomeScreen />} />
-          <Route exact path="/product/:id" element={<ProductScreen />} />
-          <Route exact path="/product/cart" element={<CartScreen />} />
+          <Route path="/product/:id" element={<ProductScreen />} />
+          <Route path="/product/cart" element={<CartScreen />} />
         </Routes>
       </main>
     </Router>
