@@ -25,7 +25,7 @@ function App() {
           {" "}
           <Route exact path="/" element={<HomeScreen />} />
           <Route path="/product/:id" element={<ProductScreen />} />
-          <Route path="/product/cart" element={<CartScreen />} />
+          <Route path="/cart" element={<CartScreen />} />
         </Routes>
       </main>
     </Router>
