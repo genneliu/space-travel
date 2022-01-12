@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 const Product = () => {
   return (
     <div className="product">
-      <img
-        src="/Users/genneliu/Sites/react/space-travel/Assets/Images/space.webp"
-        alt="product name"
-      ></img>
+      <img src={"/Assets/Images/space.webp"} alt="product name"></img>
       <div className="product__info">
         <p className="info__name"> </p>
         <p className="info__description">lorem ipsum</p>
