@@ -5,14 +5,14 @@
 }
 
 .productscreen__left {
-  display: flex;
+  display: inline;
   flex: 0.8;
 }
 
 .left__image {
   margin: 1rem;
   flex: 0.6;
-  height: 10rem;
+  width: 70vh;
 }
 
 .left__info {
