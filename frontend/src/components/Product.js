@@ -7,7 +7,7 @@ const Product = () => {
       <img src={"/Assets/Images/space.webp"} alt="product name"></img>
       <div className="product__info">
         <p className="info__name"> </p>
-        <p className="info__description">lorem ipsum</p>
+        <p className="info__description">lorem ipsum </p>
         <p className="info__price">$499 </p>
         <Link to={`/product/${11}`} className="info__button">
           {" "}
