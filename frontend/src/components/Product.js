@@ -1,15 +1,15 @@
 import "./Product.css";
 import { Link } from "react-router-dom";
 
-const Product = () => {
+const Product = ({ imageUrl, name, price, description, productId }) => {
   return (
     <div className="product">
-      <img src={require(`../Assets/Images/space.webp`)} alt="product name" />
+      <img src={imageUrl} alt={name} />
       <div className="product__info">
-        <p className="info__name"> </p>
-        <p className="info__description">lorem ipsum </p>
-        <p className="info__price">$499 </p>
-        <Link to={`/product/${11}`} className="info__button">
+        <p className="info__name"> {name}</p>
+        <p className="info__description">{description.substring(0, 100)}... </p>
+        <p className="info__price"> ${price} </p>
+        <Link to={`/product/${productId}`} className="info__button">
           View
         </Link>
       </div>
