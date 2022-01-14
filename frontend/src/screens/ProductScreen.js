@@ -44,18 +44,23 @@ const ProductScreen = () => {
           <div className="productscreen__right">
             <div className="right__info">
               <p>
-                Price: <span> $499</span>
+                Price: <span> ${product.price}</span>
               </p>
               <p>
-                Status: <span> In Stock </span>
+                Status:{" "}
+                <span>
+                  {" "}
+                  {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
+                </span>
               </p>
               <p>
                 Qty:{" "}
-                <select>
-                  <option value="1">1 </option>
-                  <option value="2">2 </option>
-                  <option value="3">3 </option>
-                  <option value="4">4</option>
+                <select value={qty} onChange={(e) => setQty(e.target.value)}>
+                  {[...Array(product.countInStock).keys()].map((x) => (
+                    <option key={x + 1} value={x + 1}>
+                      {x + 1}
+                    </option>
+                  ))}
                 </select>
               </p>
               <p>
