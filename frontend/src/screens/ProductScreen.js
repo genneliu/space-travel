@@ -9,6 +9,7 @@ import { addToCart } from "../redux/actions/cartActions";
 
 function ProductScreen({ match, history }) {
   const { id } = useParams();
+  const findProduct = findProduct.find((p) => p._id === Number(id));
   const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
 
@@ -20,6 +21,7 @@ function ProductScreen({ match, history }) {
       dispatch(getProductDetails(id));
     }
   }, [dispatch, product, match]);
+
   return (
     <div className="productscreen">
       {loading ? (
