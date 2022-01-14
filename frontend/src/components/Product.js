@@ -1,5 +1,6 @@
 import "./Product.css";
 import { Link } from "react-router-dom";
+import "../Assets/Images";
 
 const Product = ({ imageUrl, name, price, description, productId }) => {
   return (
