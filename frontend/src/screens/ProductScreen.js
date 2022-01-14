@@ -1,7 +1,7 @@
 import "./ProductScreen.css";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 //Actions
 import { getProductDetails } from "../redux/actions/productActions";
@@ -22,6 +22,11 @@ const ProductScreen = () => {
       dispatch(getProductDetails(id));
     }
   }, [dispatch, product, id]);
+
+  const addToCartHandler = () => {
+    dispatch(addToCart(product._id, qty));
+    history.push("/cart");
+  };
 
   return (
     <div className="productscreen">
@@ -64,7 +69,13 @@ const ProductScreen = () => {
                 </select>
               </p>
               <p>
-                <button type="button"> Add to Cart </button>
+                <button
+                  type="button"
+                  onClick={() => addToCartHandler(product._id, qty)}
+                >
+                  {" "}
+                  Add to Cart{" "}
+                </button>
               </p>
             </div>
           </div>
