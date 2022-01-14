@@ -1,12 +1,14 @@
 import "./ProductScreen.css";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
 
 //Actions
 import { getProductDetails } from "../redux/actions/productActions";
 import { addToCart } from "../redux/actions/cartActions";
 
-const ProductScreen = ({ match, history }) => {
+function ProductScreen({ match, history }) {
+  const { id } = useParams();
   const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
 
@@ -14,8 +16,8 @@ const ProductScreen = ({ match, history }) => {
   const { loading, error, product } = productDetails;
 
   useEffect(() => {
-    if (product && match.params.id !== product._id) {
-      dispatch(getProductDetails(match.params.id));
+    if (product && id !== product._id) {
+      dispatch(getProductDetails(id));
     }
   }, [dispatch, product, match]);
   return (
@@ -62,6 +64,6 @@ const ProductScreen = ({ match, history }) => {
       )}
     </div>
   );
-};
+}
 
 export default ProductScreen;
