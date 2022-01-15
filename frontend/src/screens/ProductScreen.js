@@ -11,6 +11,7 @@ const ProductScreen = () => {
   // const findProduct = findProduct.find((p) => p._id === Number(id));
   const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const productDetails = useSelector((state) => state.getProductDetails);
   const { loading, error, product } = productDetails;
@@ -25,7 +26,7 @@ const ProductScreen = () => {
 
   const addToCartHandler = () => {
     dispatch(addToCart(product._id, qty));
-    history.push("/cart");
+    navigate.push("/cart");
   };
 
   return (
