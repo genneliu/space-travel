@@ -9,7 +9,7 @@ const {
 // @desc get all products from db
 // @route get /api/products
 //@ access public
-router.get("/", getAllProducts);
+router.get("/shop", getAllProducts);
 
 // @desc get all products from db
 // @route get /api/products
