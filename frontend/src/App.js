@@ -7,6 +7,7 @@ import HomeScreen from "./screens/HomeScreen";
 import ShopScreen from "./screens/ShopScreen";
 import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
+import ContactScreen from "./screens/ContactScreen";
 
 //components
 import Navbar from "./components/Navbar";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/shop" element={<ShopScreen />} />
           <Route path="/product/:id" element={<ProductScreen />} />
           <Route path="/cart" element={<CartScreen />} />
+          <Route path="/contact" element={<ContactScreen />} />
         </Routes>
       </main>
     </Router>
