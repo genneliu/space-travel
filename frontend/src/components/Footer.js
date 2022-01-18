@@ -13,7 +13,10 @@ const Footer = () => {
       <p> Transport Union International </p>
       <p> 117 Sol Hall, Office #5, Medina Station </p>
       <Link to="/contact" className="contact__link">
-        Contact Us
+        Contact
+      </Link>
+      <Link to="/about" className="about__link">
+        About Us
       </Link>
     </div>
   );

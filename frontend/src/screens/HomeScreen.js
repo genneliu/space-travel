@@ -6,12 +6,10 @@ const HomeScreen = () => {
   return (
     <div>
       <h1> Welcome </h1>
-      <Link to="/shop">
-        {" "}
-        <button> Shop </button>{" "}
-      </Link>
-      <Link to="/contact">
-        <button> Contact Us </button>{" "}
+      <Link to="/shop">Shop</Link>
+      <Link to="/contact">Contact Us</Link>
+      <Link to="/about" className="about__link">
+        About Us
       </Link>
     </div>
   );

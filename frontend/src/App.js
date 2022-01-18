@@ -8,6 +8,7 @@ import ShopScreen from "./screens/ShopScreen";
 import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 import ContactScreen from "./screens/ContactScreen";
+import AboutScreen from "./screens/AboutScreen";
 
 //components
 import Navbar from "./components/Navbar";
@@ -31,6 +32,7 @@ function App() {
           <Route path="/product/:id" element={<ProductScreen />} />
           <Route path="/cart" element={<CartScreen />} />
           <Route path="/contact" element={<ContactScreen />} />
+          <Route path="/about" element={<AboutScreen />} />
         </Routes>
       </main>
       <Footer />
