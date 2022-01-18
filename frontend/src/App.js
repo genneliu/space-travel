@@ -13,6 +13,7 @@ import ContactScreen from "./screens/ContactScreen";
 import Navbar from "./components/Navbar";
 import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
+import Footer from "./components/Footer";
 
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
@@ -32,6 +33,7 @@ function App() {
           <Route path="/contact" element={<ContactScreen />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }
