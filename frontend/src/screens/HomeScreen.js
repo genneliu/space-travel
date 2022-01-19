@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const HomeScreen = () => {
   return (
-    <div>
+    <div className="homescreen__div">
       <video autoPlay loop muted id="video">
         <source src={backgroundVideo} type="video/mp4" />
       </video>

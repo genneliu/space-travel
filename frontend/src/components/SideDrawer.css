@@ -1,6 +1,7 @@
 .sidedrawer {
   width: 70%;
   background: #fff;
+
   height: 100vh;
   position: fixed;
   top: 0;
@@ -21,11 +22,10 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+  color: rgba(0, 0, 0, 0.4);
 }
 
-.contact__link
-
-.sidedrawer__links > li {
+.contact__link .sidedrawer__links > li {
   display: flex;
   align-items: center;
 }
