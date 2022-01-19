@@ -33,6 +33,9 @@ const SideDrawer = ({ show, click }) => {
           <Link to="/contact" className="contact__link">
             Contact Us
           </Link>
+          <Link to="/about" className="about__link">
+            About Us
+          </Link>
         </li>
       </ul>
     </div>
