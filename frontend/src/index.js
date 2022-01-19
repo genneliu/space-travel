@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import "./Assets/Fonts/BankGothicRegular/BankGothicRegular.ttf";
 
 ReactDOM.render(
   <Provider store={store}>

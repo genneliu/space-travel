@@ -13,3 +13,10 @@ img {
   width: 100%;
   object-fit: contain;
 }
+
+@font-face {
+  font-family: "BankGothicRegular";
+  src: local("BankGothicRegular"),
+    url("./Assets/Fonts/BankGothicRegular/BankGothicRegular.ttf")
+      format("truetype");
+}
