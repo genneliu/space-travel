@@ -16,7 +16,7 @@ const HomeScreen = () => {
       </h1>
 
       <Link to="/shop">
-        <button className="homescreen__button">Shop</button>
+        <button className="homescreen__shop__button">View Trips</button>
       </Link>
       <Link to="/contact">
         <button className="homescreen__button">Contact Us</button>
