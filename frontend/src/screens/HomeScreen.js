@@ -1,11 +1,16 @@
 import React from "react";
+import backgroundVideo from "../Assets/Videos/video5.mp4";
 
 import { Link } from "react-router-dom";
 
 const HomeScreen = () => {
   return (
     <div>
-      <h1> Welcome </h1>
+      <video autoPlay loop muted id="video">
+        <source src={backgroundVideo} type="video/mp4" />
+      </video>
+      <h1> Bringing you to the brink of our stars </h1>
+
       <Link to="/shop">Shop</Link>
       <Link to="/contact">Contact Us</Link>
       <Link to="/about" className="about__link">
