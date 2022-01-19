@@ -8,3 +8,26 @@
 .homescreen__div {
   color: white;
 }
+
+.homescreen__title {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.homescreen__button {
+  width: 20%;
+  display: block;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  height: 4rem;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.homescreen__button:hover {
+  background-color: #171717;
+  opacity: 80%;
+  border: 2px solid orange;
+}
