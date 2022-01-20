@@ -17,6 +17,7 @@
 
 .homescreen__shop__button {
   width: 30%;
+  font-family: "BankGothicRegular";
   display: block;
   margin-top: 4rem;
   margin-left: 4rem;
@@ -38,6 +39,7 @@
 
 .homescreen__button {
   font-size: 1.2rem;
+  font-family: "BankGothicRegular";
   width: 20%;
   display: block;
   margin-top: 2rem;
@@ -52,5 +54,5 @@
 .homescreen__button:hover {
   background-color: #171717;
   opacity: 80%;
-  border: 2px solid orange;
+  border: 2px solid #ffa500;
 }
