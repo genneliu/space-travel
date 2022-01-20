@@ -1,3 +1,29 @@
-.font-face-bgb {
+/* .font-face-bgb {
   font-family: "BankGothicRegular";
+} */
+
+@font-face {
+  font-family: "BankGothicRegular";
+  src: local("BankGothicRegular"),
+    url("./Assets/Fonts/BankGothicRegular/BankGothicRegular.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Eurostile";
+  src: local("eurostileFont"),
+    url("./Assets/Fonts/eurostileFont/EurostileBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Microgram";
+  src: local("MicrogramDBRregular"),
+    url("./Assets/Fonts/MicrogramDBRegular/MicrogramDBRegular.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Protomolecule";
+  src: local("Protomolecule"),
+    url("./Assets/Fonts/Protomolecule/Protomolecule.ttf") format("truetype");
 }
