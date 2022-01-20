@@ -45,7 +45,7 @@
 }
 
 .cart__link:hover {
-  background: #dd219e;
+  background: #800080;
   color: #f4f4f4;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .hamburger__menu:hover > div {
-  background: #dd219e;
+  background: #800080;
 }
 
 .hamburger__menu > div {
