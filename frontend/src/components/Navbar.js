@@ -33,7 +33,9 @@ const Navbar = ({ click }) => {
         </li>
         <li>
           {" "}
-          <Link to="/shop">Shop</Link>
+          <Link to="/shop" className="navbar__shop__link">
+            Shop
+          </Link>
         </li>
       </ul>
       <div className="hamburger__menu" onClick={click}>
