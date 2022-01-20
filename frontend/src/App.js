@@ -23,6 +23,7 @@ function App() {
       <Navbar click={() => setSideToggle(true)} />
       <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
       <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
+      <Footer />
       <main>
         {" "}
         <Routes>
@@ -35,7 +36,6 @@ function App() {
           <Route path="/about" element={<AboutScreen />} />
         </Routes>
       </main>
-      <Footer />
     </Router>
   );
 }
