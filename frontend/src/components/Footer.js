@@ -9,13 +9,13 @@ const Footer = () => {
     <div className="footer">
       {" "}
       <h3> Star Silk Roads </h3>
-      <h4> Taking the intrepid into the Expanse </h4>
       <p> Transport Union International </p>
       <p> 117 Sol Hall, Office #5, Medina Station </p>
-      <Link to="/contact" className="contact__link">
+      <Link to="/contact" className="footer__link">
         Contact
       </Link>
-      <Link to="/about" className="about__link">
+      {""} | {""}
+      <Link to="/about" className="footer__link">
         About Us
       </Link>
     </div>

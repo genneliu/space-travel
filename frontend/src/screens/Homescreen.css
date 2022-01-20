@@ -1,7 +1,8 @@
 #video {
   position: fixed;
   z-index: -1;
-  height: 100vh;
+  height: 150vh;
+  width: auto;
   opacity: 95%;
 }
 
@@ -27,7 +28,8 @@
   margin-bottom: 9rem;
   height: 5rem;
   border-radius: 8px;
-  background-color: transparent;
+  background-color: #171717;
+  opacity: 80%;
   border: 2px solid #f4f4f4;
   color: #f4f4f4;
   font-size: 2rem;
@@ -36,7 +38,7 @@
 
 .homescreen__shop__button:hover {
   background-color: #171717;
-  opacity: 80%;
+  opacity: 70%;
   border: 2px solid orange;
 }
 
@@ -46,17 +48,19 @@
   width: 20%;
   display: block;
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 2rem;
+
   height: 3rem;
   border-radius: 8px;
-  background-color: transparent;
+  background-color: #171717;
+  opacity: 80%;
   border: 2px solid #f4f4f4;
   color: #f4f4f4;
 }
 
 .homescreen__button:hover {
   background-color: #171717;
-  opacity: 80%;
+  opacity: 70%;
   border: 2px solid #ffa500;
 }
 

@@ -7,10 +7,20 @@
   color: #f4f4f4;
   text-align: center;
   font-family: "BankGothicRegular";
+  padding: 1rem 0;
+  line-height: 1.2;
 }
 
 @media (max-width: 960px) {
   .footer {
     display: none;
   }
+}
+
+.footer__link {
+  color: #f4f4f4;
+}
+
+.footer__link:hover {
+  color: orange;
 }
