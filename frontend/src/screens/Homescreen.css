@@ -8,6 +8,8 @@
 .homescreen__div {
   color: #f4f4f4;
   font-family: "BankGothicRegular";
+
+  align-items: center;
 }
 
 .homescreen__title {
@@ -21,7 +23,9 @@
   font-family: "BankGothicRegular";
   display: block;
   margin: auto;
-  height: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 9rem;
+  height: 5rem;
   border-radius: 8px;
   background-color: transparent;
   border: 2px solid #f4f4f4;
@@ -42,6 +46,7 @@
   width: 20%;
   display: block;
   margin: auto;
+  margin-top: 3rem;
   height: 3rem;
   border-radius: 8px;
   background-color: transparent;
@@ -53,4 +58,26 @@
   background-color: #171717;
   opacity: 80%;
   border: 2px solid #ffa500;
+}
+
+@media (max-width: 960px) {
+  .homescreen__shop__button {
+    width: 75%;
+  }
+
+  .homescreen__shop__button:hover {
+    background-color: #171717;
+    opacity: 80%;
+    border: 2px solid orange;
+  }
+
+  .homescreen__button {
+    width: 50%;
+  }
+
+  .homescreen__button:hover {
+    background-color: #171717;
+    opacity: 80%;
+    border: 2px solid #ffa500;
+  }
 }

@@ -10,7 +10,7 @@ const HomeScreen = () => {
       <video autoPlay loop muted id="video">
         <source src={backgroundVideo} type="video/mp4" />
       </video>
-      <h1 className="homescreen__title"> Expand your horizon</h1>
+      <h1 className="homescreen__title"> Visit the Expanse </h1>
 
       <Link to="/shop">
         <button className="homescreen__shop__button">View Trips</button>
