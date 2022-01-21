@@ -2,14 +2,19 @@ import "./CartScreen.css";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
-//stripe
-import { PaymentElement } from "@stripe/react-stripe-js";
-
 //components
 import CartItem from "../components/CartItem";
+import CheckoutForm from "../components/CheckoutForm";
 
 //actions
 import { addToCart, removeFromCart } from "../redux/actions/cartActions";
+
+// //stripe
+import { Elements } from "@stripe/react-stripe-js";
+// import { loadStripe } from "@stripe/stripe-js";
+// const stripePromise = loadStripe(
+//   "pk_test_51KKSURG1UsWcmbVpNmllMlbysaIF04bx38rCbLEpCkyXYx1yFaEE7BXyMg1CvxpCk1EP7iNH42pnuCBVb2YlptKM00vZNmUF2x"
+// );
 
 const CartScreen = () => {
   const dispatch = useDispatch();
@@ -61,8 +66,9 @@ const CartScreen = () => {
           <p> ${getCartSubTotal()} </p>
         </div>
         <div>
-          <PaymentElement />
-          <button> Proceed to Checkout</button>
+          <Elements>
+            <CheckoutForm />
+          </Elements>
         </div>
       </div>
     </div>

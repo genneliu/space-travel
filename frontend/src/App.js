@@ -15,6 +15,7 @@ import Navbar from "./components/Navbar";
 import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
 import Footer from "./components/Footer";
+import CheckoutForm from "./components/CheckoutForm";
 
 //stripe
 import { Elements } from "@stripe/react-stripe-js";
@@ -25,12 +26,22 @@ const stripePromise = loadStripe(
 
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
+
+  function App() {
+    const options = {
+      // passing the client secret obtained from the server
+      clientSecret: "{{CLIENT_SECRET}}",
+    };
+  }
   return (
     <Router>
       <Navbar click={() => setSideToggle(true)} />
       <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
       <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
       <Footer />
+      {/* <Elements stripe={stripePromise}>
+        <CheckoutForm />
+      </Elements> */}
       <main>
         {" "}
         <Routes>
@@ -38,13 +49,11 @@ function App() {
           <Route path="/" element={<HomeScreen />} />
           <Route path="/shop" element={<ShopScreen />} />
           <Route path="/product/:id" element={<ProductScreen />} />
-          <Elements stripe={stripePromise}>
-            <Route path="/cart" element={<CartScreen />} />
-          </Elements>
+          <Route path="/cart" element={<CartScreen />} />
           <Route path="/contact" element={<ContactScreen />} />
           <Route path="/about" element={<AboutScreen />} />
         </Routes>
-      </main>
+      </main>{" "}
     </Router>
   );
 }
