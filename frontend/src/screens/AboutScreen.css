@@ -1,0 +1,13 @@
+#video__history {
+  height: 200px;
+  width: 200px;
+}
+
+.about__screen {
+  font-family: "BankGothicRegular";
+  background-color: #162232;
+  color: #f4f4f4;
+  height: 100vh;
+  text-align: center;
+  padding: 2rem 0;
+}
