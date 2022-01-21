@@ -16,6 +16,13 @@ import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
 import Footer from "./components/Footer";
 
+//stripe
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+const stripePromise = loadStripe(
+  "pk_test_51KKSURG1UsWcmbVpNmllMlbysaIF04bx38rCbLEpCkyXYx1yFaEE7BXyMg1CvxpCk1EP7iNH42pnuCBVb2YlptKM00vZNmUF2x"
+);
+
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
   return (
@@ -31,7 +38,9 @@ function App() {
           <Route path="/" element={<HomeScreen />} />
           <Route path="/shop" element={<ShopScreen />} />
           <Route path="/product/:id" element={<ProductScreen />} />
-          <Route path="/cart" element={<CartScreen />} />
+          <Elements stripe={stripePromise}>
+            <Route path="/cart" element={<CartScreen />} />
+          </Elements>
           <Route path="/contact" element={<ContactScreen />} />
           <Route path="/about" element={<AboutScreen />} />
         </Routes>

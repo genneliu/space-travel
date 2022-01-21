@@ -2,6 +2,9 @@ import "./CartScreen.css";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
+//stripe
+import { PaymentElement } from "@stripe/react-stripe-js";
+
 //components
 import CartItem from "../components/CartItem";
 
@@ -58,6 +61,7 @@ const CartScreen = () => {
           <p> ${getCartSubTotal()} </p>
         </div>
         <div>
+          <PaymentElement />
           <button> Proceed to Checkout</button>
         </div>
       </div>
