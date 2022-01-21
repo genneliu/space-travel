@@ -37,7 +37,7 @@
 }
 
 .navbar__shop__link:hover {
-  border-bottom: 1px solid #800080;
+  color: orange;
 }
 
 .navbar__links > li > a > span {
