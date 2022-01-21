@@ -1,7 +1,7 @@
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
   width: 100%;
   height: 15%;
   background-color: #171717;
@@ -10,7 +10,8 @@
   font-family: "BankGothicRegular";
   padding: 1rem 0;
   line-height: 1.2;
-  margin-top: 2rem;
+  top: 120;
+  overflow: hidden;
 }
 
 @media (max-width: 960px) {

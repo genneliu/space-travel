@@ -17,6 +17,10 @@ const AboutScreen = () => {
         Ceres Mars Luna Belt
       </div>
       <div>
+        <h2>Ships</h2>
+        Luxury
+      </div>
+      <div>
         <p>
           <h2>Credits:</h2>
           Based on the show, the Expanse
