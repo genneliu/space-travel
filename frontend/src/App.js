@@ -15,33 +15,24 @@ import Navbar from "./components/Navbar";
 import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
 import Footer from "./components/Footer";
-import CheckoutForm from "./components/CheckoutForm";
+// import CheckoutForm from "./components/CheckoutForm";
 
 //stripe
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
-const stripePromise = loadStripe(
-  "pk_test_51KKSURG1UsWcmbVpNmllMlbysaIF04bx38rCbLEpCkyXYx1yFaEE7BXyMg1CvxpCk1EP7iNH42pnuCBVb2YlptKM00vZNmUF2x"
-);
+// import { Elements } from "@stripe/react-stripe-js";
+// import { loadStripe } from "@stripe/stripe-js";
+// const stripePromise = loadStripe(
+//   "pk_test_51KKSURG1UsWcmbVpNmllMlbysaIF04bx38rCbLEpCkyXYx1yFaEE7BXyMg1CvxpCk1EP7iNH42pnuCBVb2YlptKM00vZNmUF2x"
+// );
 
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
 
-  function App() {
-    const options = {
-      // passing the client secret obtained from the server
-      clientSecret: "{{CLIENT_SECRET}}",
-    };
-  }
   return (
     <Router>
       <Navbar click={() => setSideToggle(true)} />
       <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
       <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
       <Footer />
-      {/* <Elements stripe={stripePromise}>
-        <CheckoutForm />
-      </Elements> */}
       <main>
         {" "}
         <Routes>

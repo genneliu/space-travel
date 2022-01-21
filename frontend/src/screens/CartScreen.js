@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 //components
 import CartItem from "../components/CartItem";
-import CheckoutForm from "../components/CheckoutForm";
+// import CheckoutForm from "../components/CheckoutForm";
 
 //actions
 import { addToCart, removeFromCart } from "../redux/actions/cartActions";
 
 // //stripe
-import { Elements } from "@stripe/react-stripe-js";
+// import { Elements } from "@stripe/react-stripe-js";
 // import { loadStripe } from "@stripe/stripe-js";
 // const stripePromise = loadStripe(
 //   "pk_test_51KKSURG1UsWcmbVpNmllMlbysaIF04bx38rCbLEpCkyXYx1yFaEE7BXyMg1CvxpCk1EP7iNH42pnuCBVb2YlptKM00vZNmUF2x"
@@ -47,7 +47,7 @@ const CartScreen = () => {
         {cartItems.length === 0 ? (
           <div>
             {" "}
-            Your cart is empty <Link to="/">Go Back</Link>
+            Your cart is empty <Link to="/shop">Continue Shopping</Link>
           </div>
         ) : (
           cartItems.map((item) => (
@@ -65,11 +65,7 @@ const CartScreen = () => {
           <p> Subtotal ({getCartCount()}) Items </p>
           <p> ${getCartSubTotal()} </p>
         </div>
-        <div>
-          <Elements>
-            <CheckoutForm />
-          </Elements>
-        </div>
+        <div></div>
       </div>
     </div>
   );
