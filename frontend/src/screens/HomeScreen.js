@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Homescreen.css";
-import backgroundVideo from "../Assets/Videos/video5.mp4";
+import video from "../Assets/Videos/video5.mp4";
 
 import { Link } from "react-router-dom";
 
@@ -8,9 +8,13 @@ const HomeScreen = () => {
   return (
     <div className="homescreen__div">
       <video autoPlay loop muted id="video">
-        <source src={backgroundVideo} type="video/mp4" />
+        <source src={video} type="video/mp4" />
       </video>
-      <h1 className="homescreen__title"> Visit the Expanse </h1>
+
+      <h1 className="homescreen__title">
+        {" "}
+        Taking the intrepid into the Expanse{" "}
+      </h1>
 
       <Link to="/shop">
         <button className="homescreen__shop__button">View Trips</button>

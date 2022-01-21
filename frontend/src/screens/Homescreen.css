@@ -1,7 +1,7 @@
 #video {
   position: fixed;
   z-index: -1;
-  height: 150vh;
+  height: 220vh;
   width: auto;
   opacity: 95%;
 }
