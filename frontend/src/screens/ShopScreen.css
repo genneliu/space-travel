@@ -21,6 +21,11 @@
   margin-left: 8px;
 }
 
+.shop__container {
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
 .shopscreen__products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

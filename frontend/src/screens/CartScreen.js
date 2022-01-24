@@ -43,33 +43,35 @@ const CartScreen = () => {
   };
 
   return (
-    <div className="cartscreen">
-      <div className="cartscreen__left">
-        <h2> Shopping Cart </h2>
-        {cartItems.length === 0 ? (
-          <div>
-            {" "}
-            Your cart is empty <Link to="/shop">Continue Shopping</Link>
-          </div>
-        ) : (
-          cartItems.map((item) => (
-            <CartItem
-              key={item.product}
-              item={item}
-              qtyChangeHandler={qtyChangeHandler}
-              removeHandler={removeHandler}
-            />
-          ))
-        )}
-      </div>
-      <div className="cartscreen__right">
-        <div className="cartscreen__info">
-          <p> Subtotal ({getCartCount()}) Items </p>
-          <p> ${getCartSubTotal()} </p>
+    <div className="cart__container">
+      <div className="cartscreen">
+        <div className="cartscreen__left">
+          <h2> Shopping Cart </h2>
+          {cartItems.length === 0 ? (
+            <div>
+              {" "}
+              Your cart is empty <Link to="/shop">Continue Shopping</Link>
+            </div>
+          ) : (
+            cartItems.map((item) => (
+              <CartItem
+                key={item.product}
+                item={item}
+                qtyChangeHandler={qtyChangeHandler}
+                removeHandler={removeHandler}
+              />
+            ))
+          )}
         </div>
-        <div></div>
+        <div className="cartscreen__right">
+          <div className="cartscreen__info">
+            <p> Subtotal ({getCartCount()}) Items </p>
+            <p> ${getCartSubTotal()} </p>
+          </div>
+          <div></div>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };
