@@ -26,7 +26,7 @@ const AboutScreen = () => {
         <h2 className="about__ships">Ships</h2>
         Luxury
       </div>
-      <div>
+      <div className="about__credits">
         <p>
           <h2>Credits:</h2>
           Based on the show, the Expanse

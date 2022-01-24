@@ -20,7 +20,7 @@ const ShopScreen = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className="shopscreen__page">
       <div className="shopscreen">
         <h2 className="shopscreen__title"> The Trip of a Lifetime </h2>
         <div className="shopscreen__products">

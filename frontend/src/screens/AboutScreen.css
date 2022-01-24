@@ -6,7 +6,7 @@
   width: 100%;
   text-align: center;
   padding: 2rem 0;
-  position: sticky;
+  position: relative;
 }
 
 h2 {
@@ -29,4 +29,8 @@ h2 {
   height: 100%;
   width: 100%;
   position: sticky;
+}
+
+.about__credits {
+  margin-bottom: 2rem;
 }
