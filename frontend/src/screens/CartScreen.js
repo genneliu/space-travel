@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 //components
 import CartItem from "../components/CartItem";
-// import CheckoutForm from "../components/CheckoutForm";
-//components
+
 import Footer from "../components/Footer";
+import StripeCheckoutButton from "../components/StripeCheckoutButton";
 
 //actions
 import { addToCart, removeFromCart } from "../redux/actions/cartActions";
@@ -68,7 +68,9 @@ const CartScreen = () => {
             <p> Subtotal ({getCartCount()}) Items </p>
             <p> ${getCartSubTotal()} </p>
           </div>
-          <div></div>
+          <div>
+            <button>Proceed To Checkout</button>
+          </div>
         </div>
       </div>
       <Footer />
