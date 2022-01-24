@@ -6,9 +6,10 @@
   opacity: 95%;
 }
 
-image {
-  position: absolute;
-  height: 100vh;
+.homescreen__logo {
+  position: flex;
+  height: 200px;
+  z-index: 1;
 }
 
 .homescreen__div {

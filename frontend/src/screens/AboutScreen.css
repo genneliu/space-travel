@@ -1,13 +1,32 @@
-#video__history {
-  height: 200px;
-  width: 200px;
-}
-
 .about__screen {
-  font-family: "BankGothicRegular";
+  font-family: "Eurostile";
   background-color: #162232;
   color: #f4f4f4;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   text-align: center;
   padding: 2rem 0;
+  position: sticky;
+}
+
+h2 {
+  font-family: "BankGothicRegular";
+}
+
+.about__video {
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  margin: auto;
+}
+
+.about__places {
+  height: 100%;
+  width: 100%;
+  position: sticky;
+}
+.about__ships {
+  height: 100%;
+  width: 100%;
+  position: sticky;
 }

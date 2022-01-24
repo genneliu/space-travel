@@ -14,7 +14,7 @@ import AboutScreen from "./screens/AboutScreen";
 import Navbar from "./components/Navbar";
 import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
-import Footer from "./components/Footer";
+
 // import CheckoutForm from "./components/CheckoutForm";
 
 //stripe
@@ -32,7 +32,6 @@ function App() {
       <Navbar click={() => setSideToggle(true)} />
       <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
       <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
-      <Footer />
       <main>
         {" "}
         <Routes>

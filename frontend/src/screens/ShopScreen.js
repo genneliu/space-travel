@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 //components
 import Product from "../components/Product";
+import Footer from "../components/Footer";
 
 //actions
 import { getProducts as listProducts } from "../redux/actions/productActions";
@@ -19,26 +20,29 @@ const ShopScreen = () => {
   }, [dispatch]);
 
   return (
-    <div className="shopscreen">
-      <h2 className="shopscreen__title"> The Trip of a Lifetime </h2>
-      <div className="shopscreen__products">
-        {loading ? (
-          <h2>Loading...</h2>
-        ) : error ? (
-          <h2>{error}</h2>
-        ) : (
-          products.map((product) => (
-            <Product
-              key={product._id}
-              productId={product._id}
-              name={product.name}
-              price={product.price}
-              description={product.description}
-              imageUrl={product.imageUrl}
-            />
-          ))
-        )}
+    <div>
+      <div className="shopscreen">
+        <h2 className="shopscreen__title"> The Trip of a Lifetime </h2>
+        <div className="shopscreen__products">
+          {loading ? (
+            <h2>Loading...</h2>
+          ) : error ? (
+            <h2>{error}</h2>
+          ) : (
+            products.map((product) => (
+              <Product
+                key={product._id}
+                productId={product._id}
+                name={product.name}
+                price={product.price}
+                description={product.description}
+                imageUrl={product.imageUrl}
+              />
+            ))
+          )}
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

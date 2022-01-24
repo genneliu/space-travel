@@ -12,6 +12,7 @@
   line-height: 1.2;
   top: 120;
   overflow: hidden;
+  z-index: 1;
 }
 
 @media (max-width: 960px) {

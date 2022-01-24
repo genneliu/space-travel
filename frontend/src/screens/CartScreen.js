@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 //components
 import CartItem from "../components/CartItem";
 // import CheckoutForm from "../components/CheckoutForm";
+//components
+import Footer from "../components/Footer";
 
 //actions
 import { addToCart, removeFromCart } from "../redux/actions/cartActions";
@@ -67,6 +69,7 @@ const CartScreen = () => {
         </div>
         <div></div>
       </div>
+      <Footer />
     </div>
   );
 };
