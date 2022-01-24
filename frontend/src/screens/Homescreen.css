@@ -1,12 +1,16 @@
+.homescreen__container {
+}
+
 #video {
   position: fixed;
   z-index: -1;
-  height: 220vh;
+  height: 150vh;
   width: auto;
   opacity: 95%;
+  overflow: scroll;
 }
 
-.homescreen__logo {
+.homescreen__sponsorships {
   position: flex;
   height: 200px;
   z-index: 1;
@@ -15,7 +19,7 @@
 .homescreen__div {
   color: #f4f4f4;
   font-family: "BankGothicRegular";
-
+  height: 100%;
   align-items: center;
 }
 
@@ -67,6 +71,7 @@
   width: 20%;
   margin: 1rem;
   margin-top: 2rem;
+  margin-bottom: 10rem;
   height: 3rem;
   border-radius: 8px;
   background-color: #171717;
