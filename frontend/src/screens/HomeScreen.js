@@ -3,9 +3,6 @@ import "./Homescreen.css";
 import video from "../Assets/Videos/video5.mp4";
 import MCRN from "../Assets/Images/MCRN.jpg";
 
-//components
-import Footer from "../components/Footer";
-
 import { Link } from "react-router-dom";
 
 const HomeScreen = () => {
@@ -35,7 +32,6 @@ const HomeScreen = () => {
             <button className="homescreen__button">About Us</button>
           </Link>
         </div>
-        <Footer />
       </div>
     </div>
   );
