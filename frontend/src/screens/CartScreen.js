@@ -2,21 +2,22 @@ import "./CartScreen.css";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
+//stripe
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import CheckoutForm from "../components/CheckoutForm";
+
 //components
 import CartItem from "../components/CartItem";
-
 import Footer from "../components/Footer";
-import StripeCheckoutButton from "../components/StripeCheckoutButton";
 
 //actions
 import { addToCart, removeFromCart } from "../redux/actions/cartActions";
 
-// //stripe
-// import { Elements } from "@stripe/react-stripe-js";
-// import { loadStripe } from "@stripe/stripe-js";
-// const stripePromise = loadStripe(
-//   "pk_test_51KKSURG1UsWcmbVpNmllMlbysaIF04bx38rCbLEpCkyXYx1yFaEE7BXyMg1CvxpCk1EP7iNH42pnuCBVb2YlptKM00vZNmUF2x"
-// );
+//stripe promise
+const stripePromise = loadStripe(
+  "pk_test_51KKSURG1UsWcmbVpNmllMlbysaIF04bx38rCbLEpCkyXYx1yFaEE7BXyMg1CvxpCk1EP7iNH42pnuCBVb2YlptKM00vZNmUF2x"
+);
 
 const CartScreen = () => {
   const dispatch = useDispatch();
@@ -40,6 +41,12 @@ const CartScreen = () => {
     return cartItems
       .reduce((price, item) => item.price * item.qty + price, 0)
       .toFixed(2);
+  };
+
+  //stripe
+  const options = {
+    // passing the client secret obtained from the server
+    clientSecret: "{{CLIENT_SECRET}}",
   };
 
   return (
@@ -69,6 +76,7 @@ const CartScreen = () => {
             <p> ${getCartSubTotal()} </p>
           </div>
           <div>
+            <Link to={CheckoutForm}> Checout </Link>
             <button>Proceed To Checkout</button>
           </div>
         </div>
