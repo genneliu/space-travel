@@ -1,9 +1,11 @@
 import React from "react";
 import "./Homescreen.css";
 import video from "../Assets/Videos/video5.mp4";
-import MCRN from "../Assets/Images/MCRN.jpg";
 
 import { Link } from "react-router-dom";
+
+//components
+import Sponsors from "../components/Sponsors";
 
 const HomeScreen = () => {
   return (
@@ -21,8 +23,7 @@ const HomeScreen = () => {
         </Link>
         <div className="homescreen__sponsorships">
           Proudly Sponsored By:
-          <image src={MCRN} alt="MCRN Logo" className="homescreen__logo" />
-          <image src={MCRN} alt="MCRN Logo" className="homescreen__logo" />
+          <Sponsors />
         </div>
         <div className="homescreen__buttons">
           <Link to="/contact">
