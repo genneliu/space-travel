@@ -76,8 +76,10 @@ const CartScreen = () => {
             <p> ${getCartSubTotal()} </p>
           </div>
           <div>
-            <Link to={CheckoutForm}> Checout </Link>
-            <button>Proceed To Checkout</button>
+            <Link to={CheckoutForm}>
+              {" "}
+              <button>Proceed To Checkout</button>{" "}
+            </Link>
           </div>
         </div>
       </div>

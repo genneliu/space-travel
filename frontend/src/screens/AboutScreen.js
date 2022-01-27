@@ -18,6 +18,7 @@ const AboutScreen = () => {
         <br />
         <h2> Once upon a time... </h2>
         <h2> The stars were out of humanity's grasp </h2>
+        <p> Thanks to the creation of the Epstein Drive... </p>
         <div className="about__video">
           <historyVideo />
         </div>
