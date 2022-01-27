@@ -15,12 +15,14 @@ const AboutScreen = () => {
         <h2> Once upon a time... </h2>
         <h2> The stars were out of humanity's grasp </h2>
         <div className="about__video">
+          {/* side video? tv frame */}
           <video autoPlay loop muted id="video__history">
             <source src={video} type="video/mp4" />
           </video>
         </div>
         <div className="about__places">
           <h2>Places</h2>
+          {/* tabs for the places? */}
           Ceres Mars Luna Belt
         </div>
         <div>
