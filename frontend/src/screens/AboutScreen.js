@@ -1,10 +1,14 @@
 import React from "react";
 import video from "../Assets/Videos/video7.mp4";
 
+//screens
 import "./AboutScreen.css";
 
 //components
 import Footer from "../components/Footer";
+import historyVideo from "../components/historyVideo";
+import placesTab from "../components/placesTab";
+import shipsTab from "../components/shipsTab";
 
 const AboutScreen = () => {
   return (
@@ -15,19 +19,19 @@ const AboutScreen = () => {
         <h2> Once upon a time... </h2>
         <h2> The stars were out of humanity's grasp </h2>
         <div className="about__video">
-          {/* side video? tv frame */}
-          <video autoPlay loop muted id="video__history">
-            <source src={video} type="video/mp4" />
-          </video>
+          <historyVideo />
         </div>
         <div className="about__places">
           <h2>Places</h2>
           {/* tabs for the places? */}
+          <placesTab />
           Ceres Mars Luna Belt
         </div>
         <div>
           <h2 className="about__ships">Ships</h2>
-          Luxury
+          <shipsTab />
+          {/* tabs for ships */}
+          Luxury types of ships; maybe even state of rooms?
         </div>
         <div className="about__credits">
           <p>

@@ -22,7 +22,7 @@ const ShopScreen = () => {
   return (
     <div className="shopscreen__page">
       <div className="shopscreen">
-        <h2 className="shopscreen__title"> The Trip of a Lifetime </h2>
+        <h2 className="shopscreen__title"> Find Your Trip </h2>
         <div className="shop__container">
           <div className="shopscreen__products">
             {loading ? (
