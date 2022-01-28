@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import historyVideo from "../components/historyVideo";
 import placesTab from "../components/placesTab";
 import shipsTab from "../components/shipsTab";
+import Credits from "../components/Credits";
 
 const AboutScreen = () => {
   return (
@@ -23,26 +24,14 @@ const AboutScreen = () => {
           <historyVideo />
         </div>
         <div className="about__places">
-          <h2>Places</h2>
           {/* tabs for the places? */}
           <placesTab />
-          Ceres Mars Luna Belt
         </div>
         <div>
-          <h2 className="about__ships">Ships</h2>
           <shipsTab />
           {/* tabs for ships */}
-          Luxury types of ships; maybe even state of rooms?
         </div>
-        <div className="about__credits">
-          <p>
-            <h2>Credits:</h2>
-            Based on the show, the Expanse
-            <br />
-            Protomolecule Font:
-            https://www.reddit.com/r/TheExpanse/comments/o9yk1d/protomolecule_font_062021/{" "}
-          </p>
-        </div>
+        <div className="about__credits"></div>
       </div>
       <Footer />
     </div>
