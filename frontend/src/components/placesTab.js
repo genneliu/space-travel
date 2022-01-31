@@ -1,6 +1,6 @@
 import react from "react";
 
-const placesTab = () => {
+const PlacesTab = () => {
   return (
     <div className="places__tab">
       <h1> PLaces Tab</h1>
@@ -9,4 +9,4 @@ const placesTab = () => {
   );
 };
 
-export default placesTab;
+export default PlacesTab;

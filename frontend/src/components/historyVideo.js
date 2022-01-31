@@ -1,7 +1,7 @@
 import video from "../Assets/Videos/video7.mp4";
 import React from "react";
 
-const historyVideo = () => {
+const HistoryVideo = () => {
   return (
     <div className="about__video">
       <video autoPlay loop muted id="video__history">
@@ -12,4 +12,4 @@ const historyVideo = () => {
   );
 };
 
-export default historyVideo;
+export default HistoryVideo;

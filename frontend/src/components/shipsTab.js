@@ -1,6 +1,6 @@
 import react from "react";
 
-const shipsTab = () => {
+const ShipsTab = () => {
   return (
     <div className="about__ships">
       <h1>Ships Tab</h1>
@@ -9,4 +9,4 @@ const shipsTab = () => {
   );
 };
 
-export default shipsTab;
+export default ShipsTab;

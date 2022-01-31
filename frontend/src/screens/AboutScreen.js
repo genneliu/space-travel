@@ -6,9 +6,9 @@ import "./AboutScreen.css";
 
 //components
 import Footer from "../components/Footer";
-import historyVideo from "../components/historyVideo";
-import placesTab from "../components/placesTab";
-import shipsTab from "../components/shipsTab";
+import HistoryVideo from "../components/HistoryVideo";
+import PlacesTab from "../components/PlacesTab";
+import ShipsTab from "../components/ShipsTab";
 import Credits from "../components/Credits";
 
 const AboutScreen = () => {
@@ -21,17 +21,19 @@ const AboutScreen = () => {
         <h2> The stars were out of humanity's grasp </h2>
         <p> Thanks to the creation of the Epstein Drive... </p>
         <div className="about__video">
-          <historyVideo />
+          <HistoryVideo />
         </div>
         <div className="about__places">
           {/* tabs for the places? */}
-          <placesTab />
+          <PlacesTab />
         </div>
         <div>
-          <shipsTab />
+          <ShipsTab />
           {/* tabs for ships */}
         </div>
-        <div className="about__credits"></div>
+        <div className="about__credits">
+          <Credits />
+        </div>
       </div>
       <Footer />
     </div>
