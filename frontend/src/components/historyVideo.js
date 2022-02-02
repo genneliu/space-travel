@@ -7,7 +7,6 @@ const HistoryVideo = () => {
       <video autoPlay loop muted id="video__history">
         <source src={video} type="video/mp4" />
       </video>
-      ;
     </div>
   );
 };

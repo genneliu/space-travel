@@ -39,7 +39,7 @@ const ProductScreen = () => {
         <>
           <div className="productscreen__left">
             <div className="left__image">
-              <img src={product.imageUrl} alt={product.name} />
+              <img src={"product.imageUrl"} alt={product.name} />
               <div className="left__info">
                 <p className="left__name"> {product.name}</p>
                 <p> Price: ${product.price}</p>

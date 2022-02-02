@@ -16,9 +16,20 @@ const AboutScreen = () => {
       <div className="about__screen">
         <h1>About Us</h1>
         <br />
-        <h2> Once upon a time... </h2>
-        <h2> The stars were out of humanity's grasp </h2>
-        <p> Thanks to the creation of the Epstein Drive... </p>
+        <h2> Once upon a time, the stars were out of humanity's grasp </h2>
+
+        <p>
+          {" "}
+          Thanks to the creation of the
+          <a
+            href="https://expanse.fandom.com/wiki/Epstein_Drive#:~:text=The%20Epstein%20Drive%20is%20a,belt%20and%20the%20outer%20planets."
+            target="_blank"
+          >
+            {" "}
+            Epstein Drive
+          </a>
+          , humanity was able to explore the stars
+        </p>
         <div className="about__video">
           <HistoryVideo />
         </div>
