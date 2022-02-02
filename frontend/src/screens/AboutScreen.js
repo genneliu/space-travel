@@ -7,7 +7,6 @@ import "./AboutScreen.css";
 //components
 import Footer from "../components/Footer";
 import HistoryVideo from "../components/HistoryVideo";
-import PlacesTab from "../components/PlacesTab";
 import Credits from "../components/Credits";
 import { Link } from "react-router-dom";
 
@@ -25,7 +24,9 @@ const AboutScreen = () => {
         </div>
         <div className="about__places">
           {/* tabs for the places? */}
-          <PlacesTab />
+          <Link to="/places">
+            <button> Places </button>
+          </Link>
         </div>
         <div>
           <Link to="/ships">

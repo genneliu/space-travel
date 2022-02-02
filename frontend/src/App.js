@@ -10,6 +10,7 @@ import CartScreen from "./screens/CartScreen";
 import ContactScreen from "./screens/ContactScreen";
 import AboutScreen from "./screens/AboutScreen";
 import ShipsScreen from "./screens/ShipsScreen";
+import PlacesScreen from "./screens/PlacesScreen";
 
 //components
 import Navbar from "./components/Navbar";
@@ -44,6 +45,7 @@ function App() {
           <Route path="/contact" element={<ContactScreen />} />
           <Route path="/about" element={<AboutScreen />} />
           <Route path="/ships" element={<ShipsScreen />} />
+          <Route path="/places" element={<PlacesScreen />} />
         </Routes>
       </main>{" "}
     </Router>

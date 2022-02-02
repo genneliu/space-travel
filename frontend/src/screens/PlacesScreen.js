@@ -1,6 +1,6 @@
 import react from "react";
 
-const PlacesTab = () => {
+const PlacesScreen = () => {
   return (
     <div className="places__tab">
       <h1> Our Destinations </h1>
@@ -9,4 +9,4 @@ const PlacesTab = () => {
   );
 };
 
-export default PlacesTab;
+export default PlacesScreen;
