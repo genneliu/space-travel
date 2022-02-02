@@ -25,12 +25,12 @@ const AboutScreen = () => {
         <div className="about__places">
           {/* tabs for the places? */}
           <Link to="/places">
-            <button> Places </button>
+            <button className="about__button"> Places </button>
           </Link>
         </div>
         <div>
           <Link to="/ships">
-            <button> Ships </button>
+            <button className="about__button"> Ships </button>
           </Link>
           {/* tabs for ships */}
         </div>
