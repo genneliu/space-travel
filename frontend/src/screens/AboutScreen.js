@@ -8,8 +8,8 @@ import "./AboutScreen.css";
 import Footer from "../components/Footer";
 import HistoryVideo from "../components/HistoryVideo";
 import PlacesTab from "../components/PlacesTab";
-import ShipsTab from "../components/ShipsTab";
 import Credits from "../components/Credits";
+import { Link } from "react-router-dom";
 
 const AboutScreen = () => {
   return (
@@ -28,7 +28,9 @@ const AboutScreen = () => {
           <PlacesTab />
         </div>
         <div>
-          <ShipsTab />
+          <Link to="/ships">
+            <button> Ships </button>
+          </Link>
           {/* tabs for ships */}
         </div>
         <div className="about__credits">

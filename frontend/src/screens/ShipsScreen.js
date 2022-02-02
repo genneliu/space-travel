@@ -1,6 +1,6 @@
 import react from "react";
 
-const ShipsTab = () => {
+const ShipsScreen = () => {
   return (
     <div className="about__ships">
       <h1>Ships Tab</h1>
@@ -9,4 +9,4 @@ const ShipsTab = () => {
   );
 };
 
-export default ShipsTab;
+export default ShipsScreen;
