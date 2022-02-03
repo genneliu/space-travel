@@ -14,18 +14,6 @@
   position: relative;
 }
 
-.info__description {
-  height: 2rem;
-}
-
-.product {
-  height: auto;
-}
-
-img {
-  object-fit: cover;
-}
-
 .shopscreen__title {
   font-size: 1.5rem;
   color: #171717;
