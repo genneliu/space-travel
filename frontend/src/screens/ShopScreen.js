@@ -15,6 +15,8 @@ const ShopScreen = () => {
   const getProducts = useSelector((state) => state.getProducts);
   const { products, loading, error } = getProducts;
 
+  // const images = require(`${product.imageUrl}`);
+
   useEffect(() => {
     dispatch(listProducts());
   }, [dispatch]);
@@ -38,6 +40,7 @@ const ShopScreen = () => {
                   price={product.price}
                   description={product.description}
                   imageUrl={product.imageUrl}
+                  //imageUrl=`url(${images[product.imageUrl]})`
                 />
               ))
             )}
