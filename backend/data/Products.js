@@ -1,6 +1,6 @@
 const products = [
   {
-    name: "10 Day Mars",
+    name: "10 Day of Mars",
     description:
       "A 10 day tour of Mars, humanity's second settlement. Mars is largely self-sustaining with cities connect by a tube system. Come visit a new culture: see the productivity of Olympia and enjoy Southern BBQ with the Mariners who still speak with a Texan accent to this day. ",
     price: 10999,
@@ -40,7 +40,7 @@ const products = [
     imageUrl: "/Images/Ganymede.webp",
   },
   {
-    name: "8 days space",
+    name: "8 days in space",
     description:
       "Gain experience in low-g! Made for Earthers and Martians who want to experience the full experience of space.",
     price: 15999,
