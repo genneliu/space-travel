@@ -40,7 +40,6 @@ const ShopScreen = () => {
                   price={product.price}
                   description={product.description}
                   imageUrl={product.imageUrl}
-                  //imageUrl=`url(${images[product.imageUrl]})`
                 />
               ))
             )}
