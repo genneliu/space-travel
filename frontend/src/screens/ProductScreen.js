@@ -39,7 +39,7 @@ const ProductScreen = () => {
         <>
           <div className="productscreen__left">
             <div className="left__image">
-              <img src={product.imageUrl} alt={product.name} />
+              <img src={`${product.imageUrl}`} alt={product.name} />
               <br />
               console.log({product.imageUrl})
               <div className="left__info">
