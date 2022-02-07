@@ -6,7 +6,7 @@
   font-family: "Eurostile";
   background-color: #162232;
   color: #f4f4f4;
-
+  z-index: 1;
   text-align: center;
   padding: 2rem;
 }
@@ -21,8 +21,16 @@ h2 {
 }
 
 #video__history {
-  height: 250px;
-  width: 250px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -1;
+}
+
+.p {
+  position: fixed;
 }
 
 .about__places {

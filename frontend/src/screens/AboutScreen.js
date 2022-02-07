@@ -16,8 +16,11 @@ const AboutScreen = () => {
       <div className="about__screen">
         <h1>About Us</h1>
         <br />
-        <h2> Once upon a time, the stars were out of humanity's grasp </h2>
 
+        <div className="about__video">
+          <HistoryVideo />
+          <h2> Once upon a time, the stars were out of humanity's grasp </h2>
+        </div>
         <p>
           {" "}
           Thanks to the creation of the
@@ -30,9 +33,7 @@ const AboutScreen = () => {
           </a>
           , humanity was able to explore the stars
         </p>
-        <div className="about__video">
-          <HistoryVideo />
-        </div>
+
         <div className="about__places">
           {/* tabs for the places? */}
           <Link to="/places">
