@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
 
+//components
+import Footer from "../components/Footer";
+
 //Actions
 import { getProductDetails } from "../redux/actions/productActions";
 import { addToCart } from "../redux/actions/cartActions";
@@ -40,8 +43,6 @@ const ProductScreen = () => {
           <div className="productscreen__left">
             <div className="left__image">
               <img src={`${product.imageUrl}`} alt={product.name} />
-              <br />
-              console.log({product.imageUrl})
               <div className="left__info">
                 <p className="left__name"> {product.name}</p>
                 <p> Price: ${product.price}</p>
@@ -84,6 +85,7 @@ const ProductScreen = () => {
           </div>
         </>
       )}
+      <Footer />
     </div>
   );
 };
