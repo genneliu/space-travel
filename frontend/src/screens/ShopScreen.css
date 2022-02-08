@@ -1,21 +1,20 @@
 .shopscreen__page {
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
 }
 .shopscreen {
   max-width: 1300px;
   width: 100%;
   height: 100%;
   margin: 2rem auto;
-  padding-bottom: 1rem;
+  padding-bottom: 10rem;
   opacity: 95%;
-  margin-bottom: 10rem;
   font-family: "BankGothicRegular";
   position: relative;
 }
 
 .shopscreen__title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #171717;
   margin-bottom: 1rem;
   margin-left: 8px;
