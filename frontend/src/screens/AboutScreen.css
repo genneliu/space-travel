@@ -1,6 +1,7 @@
 .about__container {
   position: relative;
   min-height: 100vh;
+  margin-bottom: 2rem;
 }
 .about__screen__top {
   font-family: "Eurostile";
@@ -11,7 +12,7 @@
   padding: 2rem;
 }
 
-.about__header {
+.about__header__text {
   padding-bottom: 2rem;
   border: 2px solid green;
 }
@@ -24,6 +25,7 @@ h2 {
   position: sticky;
   margin: auto;
   border: 2px solid blue;
+  height: 200px;
 }
 
 .about__text {
@@ -48,23 +50,4 @@ h2 {
 
 .about__credits {
   margin-bottom: 2rem;
-}
-
-.about__button {
-  font-size: 1.2rem;
-  font-family: "BankGothicRegular";
-  width: 20%;
-  margin: 1rem;
-  height: 3rem;
-  border-radius: 8px;
-  background-color: #171717;
-  opacity: 80%;
-  border: 2px solid #f4f4f4;
-  color: #f4f4f4;
-}
-
-.about__button:hover {
-  background-color: #171717;
-  opacity: 70%;
-  border: 2px solid #ffa500;
 }

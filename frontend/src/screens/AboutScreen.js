@@ -1,23 +1,25 @@
 import React from "react";
-import video from "../Assets/Videos/video7.mp4";
+
+//video
+import video from "../Assets/Videos/video2.mp4";
 
 //screens
 import "./AboutScreen.css";
 
 //components
 import Footer from "../components/Footer";
-import HistoryVideo from "../components/HistoryVideo";
 import Credits from "../components/Credits";
-import { Link } from "react-router-dom";
 
 const AboutScreen = () => {
   return (
     <div className="about__container">
       <div className="about__screen__top">
-        <h1 className="about__header">About Us</h1>
+        <h1 className="about__header__text">About Us</h1>
       </div>
       <div className="about__video">
-        <HistoryVideo />
+        <video autoPlay loop muted id="video__history">
+          <source src={video} type="video/mp4" />
+        </video>
         <h2> Once upon a time, the stars were out of humanity's grasp </h2>
       </div>
       <div className="about__text">
@@ -34,22 +36,12 @@ const AboutScreen = () => {
           , humanity was able to explore the stars
         </p>
       </div>
-      <div className="about__places">
-        {/* tabs for the places? */}
-        <Link to="/places">
-          <button className="about__button"> Places </button>
-        </Link>
-      </div>
-      <div>
-        <Link to="/ships">
-          <button className="about__button"> Ships </button>
-        </Link>
-        {/* tabs for ships */}
-      </div>
+      <div className="about__places">{/* tabs for the places? */}</div>
+      <div>{/* tabs for ships */}</div>
       <div className="about__credits">
         <Credits />
       </div>
-
+      <br />
       <Footer />
     </div>
   );
