@@ -29,29 +29,34 @@ const ContactScreen = () => {
   return (
     <div className="contact__container">
       <div className="contact__page">
-        <h2> We'd love to hear from you! </h2>
-        <div className="contact__address">
-          <h3> Star Silk Roads </h3>
-          <p> Transport Union International </p>
-          <p> 117 Sol Hall, Office #5, Medina Station </p>
-        </div>
-        <p> Fill out this form and someone will reach out shortly</p>
+        <h2 className="contact__header"> We'd love to hear from you </h2>
+
         <form onSubmit={handleSubmit} className="contact__form">
-          <div>
-            <label htmlFor="name">Name:</label>
+          <p className="form__info">
+            {" "}
+            Fill out this form and someone will reach out shortly
+          </p>
+          <div className="form__fields">
+            <label htmlFor="name">Name: </label>
             <input type="text" id="name" required />
           </div>
-          <div>
-            <label htmlFor="email">Email:</label>
+          <div className="form__fields">
+            <label htmlFor="email">Email: </label>
             <input type="email" id="email" required />
           </div>
-          <div>
-            <label htmlFor="message">Message:</label>
+          <br />
+          <div className="form__fields">
+            <label htmlFor="message" className="message__label">
+              Message:{" "}
+            </label>
             <textarea id="message" required />
           </div>
-          <button type="submit">{status}</button>
+          <button type="submit" className="submit__button">
+            {status}
+          </button>
         </form>
       </div>
+
       <Footer />
     </div>
   );
