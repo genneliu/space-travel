@@ -15,7 +15,7 @@ const Navbar = ({ click }) => {
       <div className="navbar__logo">
         <Link to="/">
           {" "}
-          <h2> Star Silk Roads </h2>
+          <h2 id=""> Star Silk Roads </h2>
         </Link>
       </div>
       {/*  Links */}

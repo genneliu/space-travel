@@ -20,7 +20,10 @@ const AboutScreen = () => {
         <video autoPlay loop muted id="video__history">
           <source src={historyVideo} type="video/mp4" />
         </video>
-        <h2> Once upon a time, the stars were out of humanity's grasp </h2>
+        <h2 className="once__upon">
+          {" "}
+          Once upon a time, the stars were out of humanity's grasp{" "}
+        </h2>
       </div>
       <br />
       <div className="about__text">
