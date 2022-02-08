@@ -1,7 +1,7 @@
 import React from "react";
 
 //video
-import video from "../Assets/Videos/video2.mp4";
+import historyVideo from "../Assets/Videos/video7.mp4";
 
 //screens
 import "./AboutScreen.css";
@@ -16,15 +16,15 @@ const AboutScreen = () => {
       <div className="about__screen__top">
         <h1 className="about__header__text">About Us</h1>
       </div>
-      <div className="about__video">
+      <div className="about__video__div">
         <video autoPlay loop muted id="video__history">
-          <source src={video} type="video/mp4" />
+          <source src={historyVideo} type="video/mp4" />
         </video>
         <h2> Once upon a time, the stars were out of humanity's grasp </h2>
       </div>
+      <br />
       <div className="about__text">
         <p>
-          {" "}
           Thanks to the creation of the
           <a
             href="https://expanse.fandom.com/wiki/Epstein_Drive#:~:text=The%20Epstein%20Drive%20is%20a,belt%20and%20the%20outer%20planets."

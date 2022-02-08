@@ -3,7 +3,8 @@ const Credits = () => {
     <div>
       {" "}
       <p>
-        <h2>Credits:</h2>
+        Credits:
+        <br />
         Based on the show, the Expanse
         <br />
         Protomolecule Font:
