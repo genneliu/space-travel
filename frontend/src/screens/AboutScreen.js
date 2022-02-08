@@ -13,14 +13,14 @@ import { Link } from "react-router-dom";
 const AboutScreen = () => {
   return (
     <div className="about__container">
-      <div className="about__screen">
-        <h1>About Us</h1>
-        <br />
-
-        <div className="about__video">
-          <HistoryVideo />
-          <h2> Once upon a time, the stars were out of humanity's grasp </h2>
-        </div>
+      <div className="about__screen__top">
+        <h1 className="about__header">About Us</h1>
+      </div>
+      <div className="about__video">
+        <HistoryVideo />
+        <h2> Once upon a time, the stars were out of humanity's grasp </h2>
+      </div>
+      <div className="about__text">
         <p>
           {" "}
           Thanks to the creation of the
@@ -33,23 +33,23 @@ const AboutScreen = () => {
           </a>
           , humanity was able to explore the stars
         </p>
-
-        <div className="about__places">
-          {/* tabs for the places? */}
-          <Link to="/places">
-            <button className="about__button"> Places </button>
-          </Link>
-        </div>
-        <div>
-          <Link to="/ships">
-            <button className="about__button"> Ships </button>
-          </Link>
-          {/* tabs for ships */}
-        </div>
-        <div className="about__credits">
-          <Credits />
-        </div>
       </div>
+      <div className="about__places">
+        {/* tabs for the places? */}
+        <Link to="/places">
+          <button className="about__button"> Places </button>
+        </Link>
+      </div>
+      <div>
+        <Link to="/ships">
+          <button className="about__button"> Ships </button>
+        </Link>
+        {/* tabs for ships */}
+      </div>
+      <div className="about__credits">
+        <Credits />
+      </div>
+
       <Footer />
     </div>
   );

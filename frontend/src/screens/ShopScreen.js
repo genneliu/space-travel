@@ -46,6 +46,7 @@ const ShopScreen = () => {
           </div>
         </div>
       </div>
+      <br />
       <Footer />
     </div>
   );
