@@ -26,7 +26,7 @@ const AboutScreen = () => {
         </h2>
       </div>
       <br />
-      <div className="about__text">
+      <div className="about__text__div">
         <p>
           Thanks to the creation of the
           <a
@@ -39,8 +39,12 @@ const AboutScreen = () => {
           , humanity was able to explore the stars
         </p>
       </div>
-      <div className="about__places">{/* tabs for the places? */}</div>
-      <div>{/* tabs for ships */}</div>
+      <div className="amenities__tab">
+        <div className="about__places">
+          {/* tabs for the places? */} Plces Tab
+        </div>
+        <div>{/* tabs for ships */} Ships tab</div>
+      </div>
       <div className="about__credits">
         <Credits />
       </div>
