@@ -3,6 +3,8 @@
   min-height: 100vh;
   margin-bottom: 2rem;
   width: 100%;
+  height: 100vh;
+  font-family: "BankGothicRegular";
 }
 .about__screen__top {
   font-family: "Eurostile";
@@ -51,6 +53,7 @@
 }
 
 .about__credits {
+  font-family: "Eurostile";
   margin-top: 4rem;
   height: 50%;
   width: 100%;
@@ -60,4 +63,10 @@
   background-color: #162232;
   text-align: center;
   position: absolute;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.out__links {
+  color: orange;
 }
