@@ -2,7 +2,6 @@ import React from "react";
 import "./Homescreen.css";
 import video from "../Assets/Videos/video5.mp4";
 
-
 import { Link } from "react-router-dom";
 
 //components
@@ -23,7 +22,6 @@ const HomeScreen = () => {
           <button className="homescreen__shop__button">View Trips</button>
         </Link>
         <div className="homescreen__sponsorships">
-          Proudly Sponsored By:
           <Sponsors />
         </div>
         <div className="homescreen__buttons">
